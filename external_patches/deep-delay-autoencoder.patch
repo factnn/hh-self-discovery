@@ -1,0 +1,57 @@
+diff --git a/aesindy/training.py b/aesindy/training.py
+index efa8a3d..aa903fd 100644
+--- a/aesindy/training.py
++++ b/aesindy/training.py
+@@ -4,7 +4,10 @@ import time
+ import datetime
+ import numpy as np
+ import pandas as pd
+-import pickle5 as pickle
++try:
++    import pickle5 as pickle
++except ImportError:  # Python >=3.8 includes protocol 5 in the standard library.
++    import pickle
+ from sklearn.model_selection import train_test_split
+ from tensorflow.keras import layers
+ import tensorflow as tf
+@@ -148,17 +151,14 @@ class TrainModel:
+         saving_params = self.params
+             
+         # Save parameters
+-        df = pd.DataFrame()
+-        df = df.append(saving_params, ignore_index=True)
++        df = pd.DataFrame([saving_params])
+         df.to_pickle(os.path.join(saving_params['data_path'], self.savename + '_params.pkl'))
+             
+     def save_results(self, model):
+-        df = pd.DataFrame()
+-        df = df.append(self.get_results(model), ignore_index=True)
++        df = pd.DataFrame([self.get_results(model)])
+         df.to_pickle(os.path.join(self.params['data_path'], self.savename + '_results.pkl'))
+ 
+         # Save model
+-        pdb.set_trace()
+         model.save(os.path.join(self.params['data_path'], self.savename))
+ 
+ #########################################################
+@@ -221,4 +221,3 @@ def get_callbacks(params, savename, x=None, t=None):
+         callback_list.append(SindyCall(threshold=params2['sindy_threshold'], update_freq=params2['sindycall_freq'], x=x, t=t))
+         
+     return callback_list
+-
+diff --git a/analyze/analyze.py b/analyze/analyze.py
+index e55e2d7..e27f1d9 100644
+--- a/analyze/analyze.py
++++ b/analyze/analyze.py
+@@ -12,7 +12,10 @@ from sklearn.model_selection import train_test_split
+ from sklearn.preprocessing import StandardScaler
+ from solvers import SynthData
+ 
+-import pickle5 as pickle
++try:
++    import pickle5 as pickle
++except ImportError:  # Python >=3.8 includes protocol 5 in the standard library.
++    import pickle
+ import pandas as pd
+ import tensorflow as tf
+ import matplotlib.pyplot as plt

@@ -1,0 +1,50 @@
+{
+  "checkpoint": "HH_self_discovery/results/baselines/smoke/gru/best.pt",
+  "latent_size": 3,
+  "latent_std": {
+    "current_clamp": [
+      0.08215086162090302,
+      0.10672856122255325,
+      0.12730838358402252
+    ],
+    "voltage_clamp": [
+      0.029666010290384293,
+      0.02927539497613907,
+      0.08133309334516525
+    ]
+  },
+  "mean_normalized_rmse": 0.22584759730691645,
+  "model_type": "gru_bottleneck",
+  "modes": {
+    "current_clamp": {
+      "activity_weighted_rmse": 2.912975806658135,
+      "derivative_rmse": 0.29229602602036486,
+      "first_spike_timing_mae_ms": null,
+      "mae": 1.4078229665756226,
+      "matched_spike_windows": 0,
+      "mse": 6.497822889552571,
+      "normalized_rmse": 0.1101313190947151,
+      "peak_voltage_mae_mV": 1.5696797370910645,
+      "relative_rmse": 0.07570965492717002,
+      "repolarization_timing_mae_ms": 0.3028571428571429,
+      "rmse": 2.549082754551639,
+      "spike_count_exact_fraction": 1.0,
+      "spike_count_mae": 0.0
+    },
+    "voltage_clamp": {
+      "activity_weighted_rmse": 514.5551094752618,
+      "derivative_rmse": 38.73547055142721,
+      "mae": 193.87103233337402,
+      "mse": 162517.74983940826,
+      "normalized_rmse": 0.34156387551911777,
+      "peak_current_mae_uA_cm2": 313.7142868041992,
+      "peak_timing_mae_ms": 0.23750000000000002,
+      "relative_rmse": 0.4064982190834034,
+      "rmse": 403.13490277996056
+    }
+  },
+  "prediction_steps": 20,
+  "seed": 1234,
+  "split": "test",
+  "windows_per_mode": 8
+}

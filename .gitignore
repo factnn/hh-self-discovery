@@ -1,0 +1,82 @@
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+.deps/
+data/generated/
+runs/
+
+# OS/editor and local environment files
+.DS_Store
+.idea/
+.vscode/
+.env
+.env.*
+*.swp
+
+# Model and array artifacts outside deliberately tracked result summaries
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+
+# LaTeX build products; retain source, bibliography, figures, and final PDF
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+paper/**/backups/
+paper/iclr2027_freeze/
+
+# Generated baseline smoke artifacts
+results/baselines/**/checkpoint
+results/baselines/**/weights.*
+results/baselines/**/validation_latents.npy
+
+# Temporary local variants
+*.orig
+
+# Figure iteration artifacts: per-edit backups, superseded exports, and
+# throwaway previews. The figures referenced by the manuscript stay tracked.
+paper/iclr2027/figures/archive_pre_*/
+paper/iclr2027/figures/model_architecture*.pdf
+paper/iclr2027/figures/model_architecture*.svg
+paper/iclr2027/figures/*.before_*.pdf
+paper/iclr2027/figures/*.before_*.svg
+paper/iclr2027/*-preview.png
+paper/iclr2027/*-print-check.png
+paper/iclr2027/*-current.png
+paper/iclr2027/*.before_*.svg
+paper/iclr2027/iclr_hh.before-*.pdf
+# Root-level figure build intermediates and superseded variants; the shipped
+# PDFs live in figures/ and the editable sources are the two SVG files below.
+paper/iclr2027/hh-*.pdf
+paper/iclr2027/hh-*.svg
+!paper/iclr2027/hh-mechanism-audit-revised.svg
+!paper/iclr2027/hh-model-architecture.svg
+
+# Manuscript, internal notes, and figure tooling stay local; the repository
+# tracks the project itself (data generation, models, training, audits, tests).
+paper/
+PLAN.md
+PHASE2_PLAN.md
+PHASE2_RESULTS.md
+RESULTS.md
+BASELINE.md
+ref_*.md
+gpt_*.md
+HH_*.pdf
+scripts/make_paper_figures.py
+scripts/make_mechanism_diagnostics.py
+scripts/make_baseline_diagnostic.py
+scripts/export_e198_vc_figure.py
+scripts/plot_cross_seed_audit.py
+scripts/plot_optimization_audit.py
+scripts/export_artifact_summary.py
+scripts/package_supplementary.sh

@@ -1,0 +1,574 @@
+{
+  "analytic_voltage_clamp": [
+    {
+      "gate_max_abs": 2.5008206083490525e-05,
+      "gate_rmse": 5.88764474076195e-07,
+      "voltage_mV": -100.0
+    },
+    {
+      "gate_max_abs": 0.0,
+      "gate_rmse": 0.0,
+      "voltage_mV": -65.0
+    },
+    {
+      "gate_max_abs": 2.0528930999574868e-08,
+      "gate_rmse": 1.5669311459485484e-09,
+      "voltage_mV": -20.0
+    },
+    {
+      "gate_max_abs": 2.185911530339091e-06,
+      "gate_rmse": 9.584736952719463e-08,
+      "voltage_mV": 40.0
+    }
+  ],
+  "convergence": [
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.005249163757943376,
+        "gate_rmse": 0.0003935949789287224,
+        "response_max_abs": 0.7844557072702667,
+        "response_rmse": 0.06597459545583018
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.01051088443620063,
+        "gate_rmse": 0.0007885417299728007,
+        "response_max_abs": 1.570958267524496,
+        "response_rmse": 0.13202841618776043
+      },
+      "family": "current_step",
+      "mode": "current_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 4.022339288124586e-06,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 8.383304717085593e-09,
+          "gate_rmse": 5.688473678381171e-10,
+          "voltage_max_abs_mV": 7.281780341372723e-06,
+          "voltage_rmse_mV": 2.96045532078237e-07
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 7.066074273930142e-05,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 1.5844142375875947e-07,
+          "gate_rmse": 1.1293591257085081e-08,
+          "voltage_max_abs_mV": 0.0001277439721931728,
+          "voltage_rmse_mV": 5.257494279168802e-06
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.0013460010860084394,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 2.462041768902523e-06,
+          "gate_rmse": 1.7394167918919835e-07,
+          "voltage_max_abs_mV": 0.0024227017098752412,
+          "voltage_rmse_mV": 9.600117583130563e-05
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 8.464405613750614e-06,
+        "gate_rmse": 3.0092688382251426e-07,
+        "response_max_abs": 0.0012346168206907038,
+        "response_rmse": 5.529681175634279e-05
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 3.497465339308281e-05,
+        "gate_rmse": 1.2646390922686008e-06,
+        "response_max_abs": 0.005195520227626815,
+        "response_rmse": 0.0002787670506756215
+      },
+      "family": "current_chirp",
+      "mode": "current_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 1.8852409656376118e-05,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 3.1245516252109695e-07,
+          "gate_rmse": 1.6687263588208197e-08,
+          "voltage_max_abs_mV": 4.554168688652993e-05,
+          "voltage_rmse_mV": 3.0189846698160735e-06
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.00011838886670544482,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 6.607493228116823e-07,
+          "gate_rmse": 3.144778214372854e-08,
+          "voltage_max_abs_mV": 0.00012182155541751172,
+          "voltage_rmse_mV": 9.977523397305561e-06
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.0021688208568245216,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 2.3420915122862596e-06,
+          "gate_rmse": 1.4835155382264403e-07,
+          "voltage_max_abs_mV": 0.002154026054867586,
+          "voltage_rmse_mV": 0.00015202198925539024
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.006796583099817788,
+        "gate_rmse": 0.0004260078645043232,
+        "response_max_abs": 0.9363794386075996,
+        "response_rmse": 0.07414289362750225
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.014343023459575277,
+        "gate_rmse": 0.0009235364765199323,
+        "response_max_abs": 2.1227247002985195,
+        "response_rmse": 0.16123975252164904
+      },
+      "family": "current_prbs",
+      "mode": "current_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 7.010210903210675e-06,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 3.220072453125056e-08,
+          "gate_rmse": 1.7897527781506247e-09,
+          "voltage_max_abs_mV": 8.015071827571774e-06,
+          "voltage_rmse_mV": 5.726822884030825e-07
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.00011870592184906755,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 1.79975317982084e-07,
+          "gate_rmse": 9.951848455268463e-09,
+          "voltage_max_abs_mV": 0.00013973759441654465,
+          "voltage_rmse_mV": 8.244247942339453e-06
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.0022673476464780454,
+          "current_max_abs_uA_cm2": 0.0,
+          "current_rmse_uA_cm2": 0.0,
+          "gate_max_abs": 2.888873130491021e-06,
+          "gate_rmse": 1.5013400504567565e-07,
+          "voltage_max_abs_mV": 0.002657576310781451,
+          "voltage_rmse_mV": 0.00015369316295225146
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.01226198538995903,
+        "gate_rmse": 0.0003221167847272528,
+        "response_max_abs": 7.940981568484915,
+        "response_rmse": 0.8470020205307248
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.024069646713241268,
+        "gate_rmse": 0.0006509665894269703,
+        "response_max_abs": 15.822077416877391,
+        "response_rmse": 1.6917298157521312
+      },
+      "family": "voltage_step",
+      "mode": "voltage_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 0.03004010332901781,
+          "current_max_abs_uA_cm2": 0.4668922072838768,
+          "current_rmse_uA_cm2": 0.0522193621810487,
+          "gate_max_abs": 0.0003314338514252002,
+          "gate_rmse": 2.038083081276082e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.0599322434243797,
+          "current_max_abs_uA_cm2": 0.930394000424144,
+          "current_rmse_uA_cm2": 0.10418433059767779,
+          "gate_max_abs": 0.0006609251631125579,
+          "gate_rmse": 4.079682679544184e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.11933570222840681,
+          "current_max_abs_uA_cm2": 1.8497769898384604,
+          "current_rmse_uA_cm2": 0.20746019397524096,
+          "gate_max_abs": 0.001314113913681525,
+          "gate_rmse": 8.173659924975242e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.010387964956317775,
+        "gate_rmse": 0.00027734075956215454,
+        "response_max_abs": 4.062280084078935,
+        "response_rmse": 0.5465541005821676
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.020384485346884945,
+        "gate_rmse": 0.0005617526143604805,
+        "response_max_abs": 8.096721639570973,
+        "response_rmse": 1.0919002336711303
+      },
+      "family": "voltage_prepulse",
+      "mode": "voltage_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 0.008902280031365135,
+          "current_max_abs_uA_cm2": 0.13971961243856867,
+          "current_rmse_uA_cm2": 0.016058993801356412,
+          "gate_max_abs": 0.0008983115944982689,
+          "gate_rmse": 1.6875319847337547e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.017809182618017685,
+          "current_max_abs_uA_cm2": 0.2792990062845888,
+          "current_rmse_uA_cm2": 0.032122432773604506,
+          "gate_max_abs": 0.0018070741940021673,
+          "gate_rmse": 3.452378714358182e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.03563941900811478,
+          "current_max_abs_uA_cm2": 0.5583187968505854,
+          "current_rmse_uA_cm2": 0.0642675845077342,
+          "gate_max_abs": 0.0036563337275640206,
+          "gate_rmse": 7.218909761292044e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.00897463545974142,
+        "gate_rmse": 0.00027262769171422675,
+        "response_max_abs": 9.319046572828825,
+        "response_rmse": 0.7984301682310587
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.06869907109988982,
+        "gate_rmse": 0.0017739121390780892,
+        "response_max_abs": 56.982310045491204,
+        "response_rmse": 4.471709538566138
+      },
+      "family": "active_34",
+      "mode": "voltage_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 0.06609623314636057,
+          "current_max_abs_uA_cm2": 0.8371198374561573,
+          "current_rmse_uA_cm2": 0.1195656347981748,
+          "gate_max_abs": 0.0016955019291288176,
+          "gate_rmse": 4.152491433945249e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.1321665096051942,
+          "current_max_abs_uA_cm2": 1.6741366576075052,
+          "current_rmse_uA_cm2": 0.23907514548431438,
+          "gate_max_abs": 0.0034103542091720174,
+          "gate_rmse": 8.455492872109011e-05,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.26421195286319366,
+          "current_max_abs_uA_cm2": 3.347607210580918,
+          "current_rmse_uA_cm2": 0.47789686727885095,
+          "gate_max_abs": 0.006898393866712982,
+          "gate_rmse": 0.00017529611860894395,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.25000711806574594,
+        "gate_rmse": 0.002291890988234702,
+        "response_max_abs": 11.042701762593424,
+        "response_rmse": 1.0018672913118825
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.3427267113371706,
+        "gate_rmse": 0.004419327676457197,
+        "response_max_abs": 55.31425487718968,
+        "response_rmse": 4.229800593773713
+      },
+      "family": "active_18",
+      "mode": "voltage_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 0.0407224396490756,
+          "current_max_abs_uA_cm2": 3.3773429566383584,
+          "current_rmse_uA_cm2": 0.07359917897675844,
+          "gate_max_abs": 0.028052435654510433,
+          "gate_rmse": 0.00021329111227851274,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.07413224171015245,
+          "current_max_abs_uA_cm2": 3.00794880749163,
+          "current_rmse_uA_cm2": 0.1350419530708451,
+          "gate_max_abs": 0.05760143513329241,
+          "gate_rmse": 0.0005080425070714221,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.148386857261635,
+          "current_max_abs_uA_cm2": 4.6406552499754525,
+          "current_rmse_uA_cm2": 0.27079546722812753,
+          "gate_max_abs": 0.12082568901324497,
+          "gate_rmse": 0.0015436063915646432,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        }
+      }
+    },
+    {
+      "dt_0.01_vs_0.005": {
+        "gate_max_abs": 0.22151468612227943,
+        "gate_rmse": 0.002081603198374297,
+        "response_max_abs": 11.481012270341125,
+        "response_rmse": 0.658561023053202
+      },
+      "dt_0.02_vs_0.01": {
+        "gate_max_abs": 0.1289735611882873,
+        "gate_rmse": 0.0016250628577346448,
+        "response_max_abs": 18.983246660388886,
+        "response_rmse": 2.1526595894567606
+      },
+      "family": "active_09",
+      "mode": "voltage_clamp",
+      "production_vs_reference_by_dt": {
+        "0.005": {
+          "component_current_rmse_uA_cm2": 0.0135501631490259,
+          "current_max_abs_uA_cm2": 1.2221833095279635,
+          "current_rmse_uA_cm2": 0.023891089728102808,
+          "gate_max_abs": 0.01814312685494135,
+          "gate_rmse": 0.00014434724616643464,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.01": {
+          "component_current_rmse_uA_cm2": 0.02186879517335591,
+          "current_max_abs_uA_cm2": 1.6802685945499434,
+          "current_rmse_uA_cm2": 0.039011130171378805,
+          "gate_max_abs": 0.037533888251660485,
+          "gate_rmse": 0.0003409094707741357,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        },
+        "0.02": {
+          "component_current_rmse_uA_cm2": 0.08438101357643774,
+          "current_max_abs_uA_cm2": 6.71182948550495,
+          "current_rmse_uA_cm2": 0.14824722379085445,
+          "gate_max_abs": 0.07966145814005787,
+          "gate_rmse": 0.0009606534595539616,
+          "voltage_max_abs_mV": 0.0,
+          "voltage_rmse_mV": 0.0
+        }
+      }
+    }
+  ],
+  "families": [
+    "current_step",
+    "current_chirp",
+    "current_prbs",
+    "voltage_step",
+    "voltage_prepulse",
+    "active_34",
+    "active_18",
+    "active_09"
+  ],
+  "independent_reference": [
+    {
+      "component_current_rmse_uA_cm2": 0.0013460010860084394,
+      "current_max_abs_uA_cm2": 0.0,
+      "current_rmse_uA_cm2": 0.0,
+      "family": "current_step",
+      "gate_max_abs": 2.462041768902523e-06,
+      "gate_rmse": 1.7394167918919835e-07,
+      "metadata": {
+        "amplitude_uA_cm2": 14.998525900218016,
+        "control_mode": "current_clamp",
+        "family": "current_step",
+        "start_ms": 15.50694307522069,
+        "stop_ms": 60.46006879813066
+      },
+      "mode": "current_clamp",
+      "voltage_max_abs_mV": 0.0024227017098752412,
+      "voltage_rmse_mV": 9.600117583130563e-05
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.0021688208568245216,
+      "current_max_abs_uA_cm2": 0.0,
+      "current_rmse_uA_cm2": 0.0,
+      "family": "current_chirp",
+      "gate_max_abs": 2.3420915122862596e-06,
+      "gate_rmse": 1.4835155382264403e-07,
+      "metadata": {
+        "amplitude_uA_cm2": 5.301907106702648,
+        "control_mode": "current_clamp",
+        "family": "current_chirp",
+        "offset_uA_cm2": 4.000343495572146,
+        "start_hz": 1.4035493344574046,
+        "stop_hz": 85.39352260825268
+      },
+      "mode": "current_clamp",
+      "voltage_max_abs_mV": 0.002154026054867586,
+      "voltage_rmse_mV": 0.00015202198925539024
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.0022673476464780454,
+      "current_max_abs_uA_cm2": 0.0,
+      "current_rmse_uA_cm2": 0.0,
+      "family": "current_prbs",
+      "gate_max_abs": 2.888873130491021e-06,
+      "gate_rmse": 1.5013400504567565e-07,
+      "metadata": {
+        "block_ms": 6.991322119945821,
+        "control_mode": "current_clamp",
+        "family": "current_prbs",
+        "high_uA_cm2": 14.0,
+        "low_uA_cm2": -4.0
+      },
+      "mode": "current_clamp",
+      "voltage_max_abs_mV": 0.002657576310781451,
+      "voltage_rmse_mV": 0.00015369316295225146
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.11933570222840681,
+      "current_max_abs_uA_cm2": 1.8497769898384604,
+      "current_rmse_uA_cm2": 0.20746019397524096,
+      "family": "voltage_step",
+      "gate_max_abs": 0.001314113913681525,
+      "gate_rmse": 8.173659924975242e-05,
+      "metadata": {
+        "control_mode": "voltage_clamp",
+        "family": "voltage_step",
+        "holding_mV": -82.20722988459212,
+        "step_mV": 32.794078483298534,
+        "tail_mV": -55.69867174956852
+      },
+      "mode": "voltage_clamp",
+      "voltage_max_abs_mV": 0.0,
+      "voltage_rmse_mV": 0.0
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.03563941900811478,
+      "current_max_abs_uA_cm2": 0.5583187968505854,
+      "current_rmse_uA_cm2": 0.0642675845077342,
+      "family": "voltage_prepulse",
+      "gate_max_abs": 0.0036563337275640206,
+      "gate_rmse": 7.218909761292044e-05,
+      "metadata": {
+        "control_mode": "voltage_clamp",
+        "family": "voltage_prepulse",
+        "holding_mV": -75.62174932604651,
+        "prepulse_mV": -57.11432634977092,
+        "test_mV": 16.268511245960426
+      },
+      "mode": "voltage_clamp",
+      "voltage_max_abs_mV": 0.0,
+      "voltage_rmse_mV": 0.0
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.26421195286319366,
+      "current_max_abs_uA_cm2": 3.347607210580918,
+      "current_rmse_uA_cm2": 0.47789686727885095,
+      "family": "active_34",
+      "gate_max_abs": 0.006898393866712982,
+      "gate_rmse": 0.00017529611860894395,
+      "metadata": {
+        "active_search": true,
+        "control_mode": "voltage_clamp",
+        "family": "active_34",
+        "levels_mV": [
+          -105.5913448644014,
+          5.814951188672857,
+          32.266415518681754,
+          -80.09823317316992
+        ],
+        "phase_durations_ms": [
+          2.6081606437597573,
+          11.144689649882485,
+          5.192517225729232,
+          1.054632480628524
+        ]
+      },
+      "mode": "voltage_clamp",
+      "voltage_max_abs_mV": 0.0,
+      "voltage_rmse_mV": 0.0
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.148386857261635,
+      "current_max_abs_uA_cm2": 4.6406552499754525,
+      "current_rmse_uA_cm2": 0.27079546722812753,
+      "family": "active_18",
+      "gate_max_abs": 0.12082568901324497,
+      "gate_rmse": 0.0015436063915646432,
+      "metadata": {
+        "active_search": true,
+        "control_mode": "voltage_clamp",
+        "family": "active_18",
+        "levels_mV": [
+          -95.44536966954313,
+          12.557365490062203,
+          42.12553185657705,
+          -120.30946392257516
+        ],
+        "phase_durations_ms": [
+          2.4693618356506875,
+          3.465520966910276,
+          10.066999726425456,
+          3.998117471013578
+        ]
+      },
+      "mode": "voltage_clamp",
+      "voltage_max_abs_mV": 0.0,
+      "voltage_rmse_mV": 0.0
+    },
+    {
+      "component_current_rmse_uA_cm2": 0.08438101357643774,
+      "current_max_abs_uA_cm2": 6.71182948550495,
+      "current_rmse_uA_cm2": 0.14824722379085445,
+      "family": "active_09",
+      "gate_max_abs": 0.07966145814005787,
+      "gate_rmse": 0.0009606534595539616,
+      "metadata": {
+        "active_search": true,
+        "control_mode": "voltage_clamp",
+        "family": "active_09",
+        "levels_mV": [
+          -84.28626353926558,
+          -26.8198889459584,
+          13.724118164092209,
+          -117.6943974740476
+        ],
+        "phase_durations_ms": [
+          0.845691695993098,
+          7.102161009629569,
+          4.9428678115999904,
+          7.109279482777344
+        ]
+      },
+      "mode": "voltage_clamp",
+      "voltage_max_abs_mV": 0.0,
+      "voltage_rmse_mV": 0.0
+    }
+  ],
+  "seed": 20260902
+}

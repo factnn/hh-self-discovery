@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hh-self-discovery"
+version = "0.1.0"
+description = "Discover latent Hodgkin-Huxley dynamics from current and voltage observations"
+license = "MIT"
+authors = [
+  { name = "Peiyu Zang", email = "202421130105@mail.bnu.edu.cn" },
+  { name = "Jiayi Hao" },
+  { name = "Yongqiang Cai", email = "caiyq.math@mail.bnu.edu.cn" },
+]
+requires-python = ">=3.10"
+dependencies = [
+  "h5py>=3.10",
+  "joblib>=1.3",
+  "matplotlib>=3.8",
+  "numpy>=1.24,<2",
+  "pandas>=2.0",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "torch>=2.3",
+  "tqdm>=4.66",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

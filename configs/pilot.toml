@@ -1,0 +1,19 @@
+[simulation]
+dt_ms = 0.02
+current_clamp_duration_ms = 100.0
+voltage_clamp_duration_ms = 60.0
+seed = 42
+
+[dataset]
+pilot_trajectories = 500
+full_trajectories = 2000
+train_fraction = 0.8
+validation_fraction = 0.1
+test_fraction = 0.1
+
+[sampling]
+steady_fraction = 0.20
+threshold_fraction = 0.25
+depolarization_fraction = 0.25
+repolarization_fraction = 0.20
+recovery_fraction = 0.10

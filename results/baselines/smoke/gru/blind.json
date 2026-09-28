@@ -1,0 +1,111 @@
+{
+  "best_monotonic_assignment": [
+    {
+      "gate": "h",
+      "latent": 0,
+      "spearman": 0.4607771260997067
+    },
+    {
+      "gate": "n",
+      "latent": 1,
+      "spearman": -0.27126099706744866
+    },
+    {
+      "gate": "m",
+      "latent": 2,
+      "spearman": -0.3142543974747554
+    }
+  ],
+  "checkpoint": "HH_self_discovery/results/baselines/smoke/gru/best.pt",
+  "cubic_cycle_test_r2": {
+    "z0": -14239803.877524469,
+    "z1": -157335.69130310873,
+    "z2": -3162546.671568319
+  },
+  "cubic_mapping_test_r2": {
+    "h": -114.46673649239199,
+    "m": -24.162377097624567,
+    "n": -135.8252907220015
+  },
+  "evaluation_data_root": "HH_self_discovery/data/generated/pilot_stratified",
+  "evaluation_history_observation_stride": 1,
+  "evaluation_response_noise_fraction": 0.0,
+  "evaluation_split": "test",
+  "latent_size": 3,
+  "linear_mapping_test_r2": {
+    "h": -1.4749052936307145,
+    "m": -0.26648929058999116,
+    "n": -1.827568432255009
+  },
+  "mapping_data_root": "HH_self_discovery/data/generated/pilot_stratified",
+  "mapping_split": "validation",
+  "pearson": [
+    [
+      -0.25667262355383785,
+      0.18454353881972985,
+      0.5724973090119966
+    ],
+    [
+      -0.1794066438224149,
+      0.24639567612742935,
+      0.47509211094859044
+    ],
+    [
+      0.030160488538250884,
+      -0.7008523224005149,
+      0.006728582150670646
+    ]
+  ],
+  "prediction_by_mode": {
+    "current_clamp": {
+      "activity_weighted_rmse": 1.6395969441683296,
+      "derivative_rmse": 0.7694176922610998,
+      "first_spike_timing_mae_ms": null,
+      "mae": 0.9750962257385254,
+      "matched_spike_windows": 0,
+      "mse": 2.2032021655886638,
+      "peak_voltage_mae_mV": 1.1558246612548828,
+      "relative_rmse": 0.3014547172985462,
+      "repolarization_timing_mae_ms": 0.22500000000000003,
+      "rmse": 1.4843187547116232,
+      "spike_count_exact_fraction": 1.0,
+      "spike_count_mae": 0.0
+    },
+    "voltage_clamp": {
+      "activity_weighted_rmse": 555.9893995450602,
+      "derivative_rmse": 279.8251029667619,
+      "mae": 246.1464500427246,
+      "mse": 213522.1794792323,
+      "peak_current_mae_uA_cm2": 486.4403991699219,
+      "peak_timing_mae_ms": 0.17500000000000002,
+      "relative_rmse": 0.4914951182390568,
+      "rmse": 462.08460207978396
+    }
+  },
+  "reverse_cubic_mapping_test_r2": {
+    "z0": -12.722540107351348,
+    "z1": -5.121632906543708,
+    "z2": -7.645133933513501
+  },
+  "ridge_alpha": 0.001,
+  "ridge_alpha_selection": null,
+  "seed": 2026,
+  "spearman": [
+    [
+      -0.3548387096774193,
+      -0.21170436350605237,
+      0.4607771260997067
+    ],
+    [
+      -0.27126099706744866,
+      -0.07007891408952514,
+      0.28409090909090906
+    ],
+    [
+      -0.1510263929618768,
+      -0.3142543974747554,
+      0.2540322580645161
+    ]
+  ],
+  "windows_per_mode": 4
+}

@@ -1,0 +1,23 @@
+[dataset]
+root = "data/generated/full_stratified"
+trajectories = 2000
+dt_ms = 0.02
+seed = 4242
+
+[model]
+latent_size = 3
+history_steps = 500
+prediction_steps = 250
+
+[training]
+epochs = 10
+train_windows_per_mode = 10000
+validation_windows_per_mode = 1000
+batch_size = 128
+learning_rate = 3e-4
+seeds = [42, 43, 44]
+sampling = "trajectory_then_event"
+
+[selection]
+locked_seed = 43
+criterion = "mean normalized validation RMSE"

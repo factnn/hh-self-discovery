@@ -1,0 +1,72 @@
+{
+  "best_selection_score": 0.2160546849961854,
+  "config": {
+    "batch_size": 4,
+    "current_clamp_loss_weight": 3.0,
+    "curriculum_fraction": 0.4,
+    "data_root": "HH_self_discovery/data/generated/pilot_stratified",
+    "device_name": "cuda",
+    "dynamics_width": 16,
+    "early_stopping_min_delta": 0.001,
+    "early_stopping_patience": 0,
+    "encoder_width": 16,
+    "epochs": 1,
+    "history_steps": 50,
+    "latent_size": 3,
+    "learning_rate": 0.0003,
+    "model_type": "controlled_latent_ode",
+    "output_dir": "HH_self_discovery/results/baselines/smoke/latent_ode",
+    "prediction_steps": 20,
+    "seed": 42,
+    "train_windows_per_mode": 16,
+    "upstream_commits": {
+      "deep_delay_autoencoder": "1f43e546e9fcb0b1fc6e74ca98bc36daba98a2b6",
+      "fnn": "4fdeb15639c755150dee5fda65c47f78a4e136b3",
+      "latent_ode": "c0682d4f52b806fb88d965755892eadd9783f936",
+      "s4": "e757cef57d89e448c413de7325ed5601aceaac13"
+    },
+    "validation_windows_per_mode": 8,
+    "voltage_transient_loss_weight": 1.0,
+    "voltage_transient_steps": 25,
+    "weight_decay": 1e-06
+  },
+  "epochs_completed": 1,
+  "history": [
+    {
+      "epoch": 1,
+      "rollout_steps": 20,
+      "selection_score": 0.2160546849961854,
+      "train_loss": 0.8770954984177024,
+      "validation": {
+        "current_clamp": {
+          "activity_weighted_rmse": 4.783750332661079,
+          "derivative_rmse": 0.43286587066897575,
+          "first_spike_timing_mae_ms": null,
+          "mae": 2.3086989402770994,
+          "matched_spike_windows": 0,
+          "mse": 19.72217670216505,
+          "normalized_rmse": 0.19186878268311203,
+          "peak_voltage_mae_mV": 1.3562250137329102,
+          "relative_rmse": 0.12682334058296074,
+          "repolarization_timing_mae_ms": 0.25333333333333335,
+          "rmse": 4.440965739809873,
+          "spike_count_exact_fraction": 1.0,
+          "spike_count_mae": 0.0,
+          "windows": 8
+        },
+        "voltage_clamp": {
+          "activity_weighted_rmse": 310.3295400756371,
+          "derivative_rmse": 80.23291195587926,
+          "mae": 84.70159378051758,
+          "mse": 80398.83279414191,
+          "normalized_rmse": 0.24024058730925876,
+          "peak_current_mae_uA_cm2": 3.804595947265625,
+          "peak_timing_mae_ms": 0.19,
+          "relative_rmse": 0.2732770748474688,
+          "rmse": 283.5468793588494,
+          "windows": 8
+        }
+      }
+    }
+  ]
+}

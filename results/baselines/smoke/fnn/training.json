@@ -1,0 +1,73 @@
+{
+  "config": {
+    "batch_size": 4,
+    "data_root": "HH_self_discovery/data/generated/pilot_stratified",
+    "epochs": 1,
+    "history_steps": 50,
+    "latent_size": 3,
+    "learning_rate": 0.0003,
+    "regularization_strength": 1.0,
+    "seed": 51,
+    "train_windows_per_mode": 16,
+    "validation_windows_per_mode": 8
+  },
+  "method": "official_fnn_lstm_embedding",
+  "modes": {
+    "current_clamp": {
+      "history": {
+        "loss": [
+          2.5151867866516113
+        ],
+        "val_loss": [
+          1.8234695196151733
+        ]
+      },
+      "latent_std": [
+        0.2671022117137909,
+        0.29351726174354553,
+        0.28896066546440125
+      ],
+      "normalizer": {
+        "command": {
+          "mean": 5.321621025960237,
+          "std": 5.431442137144141
+        },
+        "response": {
+          "mean": -59.02949598775695,
+          "std": 23.14584785686821
+        }
+      },
+      "parameters": 224,
+      "reconstruction_mse": 1.7126038074493408
+    },
+    "voltage_clamp": {
+      "history": {
+        "loss": [
+          3.3185081481933594
+        ],
+        "val_loss": [
+          1.55385422706604
+        ]
+      },
+      "latent_std": [
+        0.19865389168262482,
+        0.2584722936153412,
+        0.2803927958011627
+      ],
+      "normalizer": {
+        "command": {
+          "mean": -37.80857876725952,
+          "std": 43.33979738721487
+        },
+        "response": {
+          "mean": 876.7952177949995,
+          "std": 1180.2621620925092
+        }
+      },
+      "parameters": 224,
+      "reconstruction_mse": 1.4458045959472656
+    }
+  },
+  "scope": "representation-only; observable rollout and generator are N/A",
+  "upstream_commit": "4fdeb15639c755150dee5fda65c47f78a4e136b3"
+}
